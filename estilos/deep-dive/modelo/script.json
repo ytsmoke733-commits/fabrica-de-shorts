@@ -1,0 +1,22 @@
+{
+  "title": "O que acontece se você engolir um chiclete?",
+  "lang": "pt", "voice": "pm_alex", "speed": 1.0, "lead": 0.35, "outro": 1.0, "gap": 0.22, "music": "bed",
+  "gancho": "O que acontece se você engolir um chiclete?",
+  "sources": [
+    "Mayo Clinic, 'Is it true that gum stays in your stomach for seven years if you swallow it?': a goma base não é digerida e sai pelo intestino em poucos dias",
+    "NCBI StatPearls, 'Physiology, Peristalsis': ondas musculares empurram o alimento pelo esôfago",
+    "NCBI StatPearls, 'Physiology, Gastric Acid': o suco gástrico tem pH entre 1,5 e 3,5"
+  ],
+  "postar": { "titulo": "Engoliu chiclete? Calma 😅", "descricao": "Fica 7 anos na barriga? Não!", "hashtags": ["curiosidades", "corpohumano", "ciencia", "vocesabia"] },
+  "capa_t": 1.0,
+  "lines": [
+    { "text": "O que acontece se você engolir um chiclete?", "caps": "O que *acontece | se você *engolir | um *chiclete?" },
+    { "text": "Ele desce pelo esôfago, empurrado por ondas de músculo.", "caps": "Ele *desce | pelo *esôfago | *empurrado por | ondas de *músculo" },
+    { "text": "No estômago, o ácido não consegue digerir a goma.", "caps": "No *estômago | o *ácido | não *consegue | *digerir | a *goma" },
+    { "text": "Em poucos dias, ela sai pelo intestino.", "caps": "Em poucos *dias | ela *sai | pelo *intestino" },
+    { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades", "variantes": {
+      "tiktok": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "reels": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "shorts": { "text": "Se inscreve pra mais curiosidades.", "caps": "Se *inscreve pra | mais *curiosidades" } } }
+  ]
+}

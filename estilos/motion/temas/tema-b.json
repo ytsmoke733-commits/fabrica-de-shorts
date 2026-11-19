@@ -1,0 +1,9 @@
+{
+  "nome": "tema-b",
+  "cores": {
+    "fundo": "#0B0F0E", "fundo2": "#141B19", "texto": "#E9F2EC", "apagado": "#93A39B", "fraco": "#3B4743",
+    "acento": "#3CFF7A", "perigo": "#FF3B4E", "alerta": "#F2C14E", "destaque": "#3CE8FF",
+    "cartao": "#161C1B", "cartao2": "#0C100F", "janela1": "#3B4743", "janela2": "#3B4743", "janela3": "#3CFF7A"
+  },
+  "fontes": { "sans": "Inter", "serif": "Georgia", "mono": "JetBrains Mono" }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "conhecimento",
+  "nome": "Meu Canal",
+  "nicho": "curiosidades, histórias, E se...?, dúvidas gerais, ciência e corpo",
+  "perfis": {
+    "tiktok": "pendente",
+    "instagram": "pendente",
+    "youtube": "pendente"
+  },
+  "estilos": [
+    "deep-dive",
+    "voxel",
+    "motion",
+    "pixel"
+  ],
+  "voz": "pm_alex",
+  "proibido": []
+}

@@ -1,0 +1,24 @@
+{
+  "title": "Vitrine do kit caso-real",
+  "lang": "pt",
+  "music": "tension",
+  "lines": [
+    { "text": "a ficha do caso", "caps": "a *ficha | do *caso" },
+    { "text": "as fotos e o círculo vermelho", "caps": "as *fotos | e o círculo *vermelho" },
+    { "text": "o relatório com tarjas", "caps": "o *relatório | com *tarjas" },
+    { "text": "o recorte de jornal", "caps": "o *recorte | de *jornal" },
+    { "text": "o mapa das conexões", "caps": "o *mapa | das *conexões" },
+    { "text": "a linha do tempo", "caps": "a *linha | do *tempo" },
+    { "text": "a tela com o alerta", "caps": "a *tela | com o *alerta" },
+    { "text": "alguém digita no escuro", "caps": "alguém *digita | no *escuro" },
+    { "text": "e a tela acusa a invasão", "caps": "e a *tela | acusa a *invasão" },
+    { "text": "o escritório inteiro bloqueado", "caps": "o *escritório | inteiro *bloqueado" },
+    { "text": "a luz que pisca", "caps": "a *luz | que *pisca" },
+    { "text": "testemunha, alvo e memória", "caps": "*testemunha, | *alvo | e *memória" },
+    { "text": "a sala dos servidores", "caps": "a *sala | dos *servidores" },
+    { "text": "até o alarme disparar", "caps": "até o *alarme | *disparar" },
+    { "text": "alguém passa na chuva", "caps": "alguém *passa | na *chuva" },
+    { "text": "no fim do corredor", "caps": "no *fim | do *corredor" },
+    { "text": "e o barbante liga tudo", "caps": "e o *barbante | liga *tudo" }
+  ]
+}

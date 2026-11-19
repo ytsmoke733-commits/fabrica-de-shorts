@@ -1,0 +1,5 @@
+# As skills precisam das imagens e dados de exemplo que o .gitignore da raiz ignora.
+!*.png
+!*.jpg
+!data/
+!data/**

@@ -1,0 +1,22 @@
+{
+  "title": "A senha mais usada do mundo",
+  "lang": "pt", "voice": "pm_alex", "speed": 1.05, "lead": 0.15, "outro": 0.8, "gap": 0.18, "music": "tension",
+  "gancho": "A senha mais usada do mundo cai em menos de um segundo.",
+  "sources": [
+    "NordPass, Top 200 senhas mais comuns (2024): \"123456\" em 1º lugar, quebrada em menos de 1 segundo",
+    "Hive Systems, tabela de tempo para quebrar senhas (2024): senha de 6 dígitos só com números é quebrada instantaneamente por placas de vídeo comuns",
+    "CISA (agência de cibersegurança dos EUA): use senhas longas e únicas e ative a autenticação em duas etapas"
+  ],
+  "postar": { "titulo": "Sua senha cai em 1 segundo? 🔓", "descricao": "Confere a sua e ativa a verificação em 2 etapas.", "hashtags": ["seguranca", "senha", "tecnologia", "ciberseguranca"] },
+  "capa_t": 1.0,
+  "lines": [
+    { "text": "A senha mais usada do mundo cai em menos de um segundo.", "caps": "A *senha | mais *usada | do *mundo | *cai em | menos de *1 | *segundo" },
+    { "text": "Um programa testa milhões de senhas por segundo.", "caps": "Um *programa | testa *milhões | de *senhas | por *segundo" },
+    { "text": "E senha curta e comum cai na hora.", "caps": "E senha *curta | e *comum | cai na *hora" },
+    { "text": "Use uma frase longa e ative a verificação em duas etapas.", "caps": "Use uma *frase | *longa e | ative a *verificação | em *2 etapas" },
+    { "text": "Segue pra aprender a se proteger.", "caps": "Segue pra *aprender | a se *proteger", "variantes": {
+      "tiktok": { "text": "Segue pra aprender a se proteger.", "caps": "Segue pra *aprender | a se *proteger" },
+      "reels": { "text": "Segue pra aprender a se proteger.", "caps": "Segue pra *aprender | a se *proteger" },
+      "shorts": { "text": "Se inscreve pra aprender a se proteger.", "caps": "Se *inscreve | pra *aprender | a se *proteger" } } }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "nome": "tema",
+  "cores": { "texto": "#FFF1C1", "destaque": "#FFB43A", "contorno": "#1A0F0A", "hud": "#FFB43A", "painel": "#140C08", "perigo": "#FF4646" },
+  "fontes": { "sans": "pixel-5x7" }
+}

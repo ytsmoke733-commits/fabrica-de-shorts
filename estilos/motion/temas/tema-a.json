@@ -1,0 +1,8 @@
+{
+  "nome": "tema-a",
+  "cores": {
+    "fundo": "#150B24", "fundo2": "#24123A", "texto": "#FFF6EC", "apagado": "#BBA9CF", "fraco": "#5E4A73",
+    "acento": "#FFB020", "perigo": "#FF4D6D", "alerta": "#FF7A3C", "destaque": "#3CE8FF"
+  },
+  "fontes": { "sans": "Inter", "serif": "Georgia", "mono": "JetBrains Mono" }
+}

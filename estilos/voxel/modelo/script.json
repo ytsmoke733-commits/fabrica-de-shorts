@@ -1,0 +1,22 @@
+{
+  "title": "E se a Terra parasse de girar?",
+  "lang": "pt", "voice": "pm_alex", "speed": 1.05, "lead": 0.3, "outro": 1.0, "gap": 0.2, "music": "tension",
+  "gancho": "E se a Terra parasse de girar de repente?",
+  "sources": [
+    "Scientific American, 'How fast is the earth moving?': no equador a superfície gira a cerca de 1.670 km/h",
+    "Space.com, 'What would happen if Earth suddenly stopped spinning?': o chão pararia, mas a atmosfera e os oceanos continuariam em movimento",
+    "Live Science, 'What would happen if Earth suddenly stopped spinning?': ventos fortíssimos e ondas gigantes"
+  ],
+  "postar": { "titulo": "E se a Terra parasse de girar? 🌍", "descricao": "Você ia segurar onde?", "hashtags": ["curiosidades", "ciencia", "terra", "vocesabia"] },
+  "capa_t": 1.2,
+  "lines": [
+    { "text": "E se a Terra parasse de girar de repente?", "caps": "E *se | a *Terra | parasse de *girar | de *repente?" },
+    { "text": "Aqui no equador, o chão gira a mil seiscentos e setenta quilômetros por hora.", "caps": "Aqui no *equador | o chão *gira | a *1.670 | *quilômetros | por *hora" },
+    { "text": "Se ela freasse, o ar continuaria correndo.", "caps": "Se ela *freasse | o ar *continuaria | *correndo" },
+    { "text": "E o mar viraria uma onda gigante.", "caps": "E o *mar | *viraria | uma onda *gigante" },
+    { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades", "variantes": {
+      "tiktok": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "reels": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "shorts": { "text": "Se inscreve pra mais curiosidades.", "caps": "Se *inscreve pra | mais *curiosidades" } } }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "hacker",
+  "nome": "Hacker e tecnologia",
+  "nicho": "casos reais de hackers, como golpes/cheats/ataques funcionam e como se defender, anti-cheat em nível conceitual, notícias de segurança e tecnologia",
+  "perfis": { "tiktok": "pendente", "instagram": "pendente", "youtube": "pendente" },
+  "estilos": ["motion-b", "caso-real"],
+  "voz": "pm_alex",
+  "proibido": [
+    "passo a passo (para|pra) (invadir|hackear|crackear)",
+    "baix(e|ar|a) (o |um )?(cheat|hack|crack)",
+    "download (do |de )?(cheat|crack|hack)",
+    "link (na|da) (bio|descrição).{0,30}(cheat|crack|hack)",
+    "crack(ear|eado)? (o |do )?jogo"
+  ]
+}

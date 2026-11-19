@@ -1,0 +1,37 @@
+{
+ "duration": 16.596,
+ "voice": "pm_alex",
+ "speed": 1.05,
+ "lines": [
+  {
+   "i": 0,
+   "text": "Voc\u00ea usa o micro-ondas todo dia, mas sabe como ele esquenta a comida?",
+   "start": 0.3,
+   "end": 4.192
+  },
+  {
+   "i": 1,
+   "text": "L\u00e1 dentro, um magnetron joga ondas invis\u00edveis na caixa.",
+   "start": 4.392,
+   "end": 7.562
+  },
+  {
+   "i": 2,
+   "text": "Elas fazem a \u00e1gua da comida girar bilh\u00f5es de vezes por segundo.",
+   "start": 7.762,
+   "end": 11.499
+  },
+  {
+   "i": 3,
+   "text": "E esse atrito vira calor.",
+   "start": 11.699,
+   "end": 13.298
+  },
+  {
+   "i": 4,
+   "text": "Segue pra mais curiosidades.",
+   "start": 13.498,
+   "end": 15.396
+  }
+ ]
+}

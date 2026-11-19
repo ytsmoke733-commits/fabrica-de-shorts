@@ -1,0 +1,14 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Pixel 3D</title>
+<style>
+html, body { margin: 0; background: #111; height: 100%; } body { display: flex; align-items: center; justify-content: center; }
+#cv { display: block; height: 100vh; width: auto; image-rendering: pixelated; } body.capture #cv { height: auto; } #gl { display: none; }
+#play { position: fixed; font: 700 28px monospace; padding: 18px 36px; border: 0; background: #FFB43A; cursor: pointer; }
+</style></head>
+<body>
+<canvas id="cv" width="1080" height="1920"></canvas><canvas id="gl" width="270" height="480"></canvas>
+<button id="play" hidden>▶ PLAY</button>
+<script>if (location.search.includes('capture')) document.body.className = 'capture';</script>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+<script type="module" src="src/main.js"></script>
+</body></html>

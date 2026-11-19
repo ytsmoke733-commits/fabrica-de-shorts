@@ -1,0 +1,4 @@
+{ "nome": "tema",
+  "cores": { "texto": "#EAE3D2", "destaque": "#3CFF7A", "contorno": "#06070A", "hud": "#3CFF7A", "painel": "#0B0F0E", "perigo": "#E4322B",
+             "alvo": "#E4322B", "brasa": "#8E1D1A", "papel": "#D8CFBA", "pasta": "#B8955A", "luz": "#F1D9A6", "fita": "#E9C46A", "vazio": "#0A0C11" },
+  "fontes": { "sans": "Inter", "mono": "FreeMono" } }

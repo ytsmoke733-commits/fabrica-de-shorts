@@ -1,0 +1,21 @@
+{
+  "title": "Quantas vezes seu coração bate num dia?",
+  "lang": "pt", "voice": "pm_alex", "speed": 1.05, "lead": 0.15, "outro": 0.8, "gap": 0.18, "music": "pulse",
+  "gancho": "Quantas vezes seu coração bate num dia?",
+  "sources": [
+    "American Heart Association: o coração bate em média cerca de 100 mil vezes por dia",
+    "Conta: 100 mil por dia × 365 dias ≈ 36,5 milhões por ano"
+  ],
+  "postar": { "titulo": "Seu coração bate quantas vezes por dia? ❤️", "descricao": "Você chutou quanto?", "hashtags": ["curiosidades", "corpohumano", "voce sabia"] },
+  "capa_t": 1.0,
+  "lines": [
+    { "text": "Quantas vezes seu coração bate num dia?", "caps": "Quantas *vezes | seu *coração | bate num *dia?" },
+    { "text": "Umas cem mil vezes.", "caps": "Umas *100 mil | *vezes" },
+    { "text": "Isso dá mais de trinta e seis milhões por ano.", "caps": "Isso *dá mais | de *36 milhões | por *ano" },
+    { "text": "E ele nunca tirou um dia de folga.", "caps": "E ele *nunca | tirou um *dia | de *folga" },
+    { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades", "variantes": {
+      "tiktok": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "reels": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "shorts": { "text": "Se inscreve pra mais curiosidades.", "caps": "Se *inscreve pra | mais *curiosidades" } } }
+  ]
+}

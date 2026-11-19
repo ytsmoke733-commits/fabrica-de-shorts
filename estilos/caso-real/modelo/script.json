@@ -1,0 +1,23 @@
+{
+  "title": "O vírus que trancou 200 mil computadores",
+  "lang": "pt", "voice": "pm_alex", "speed": 0.95, "lead": 0.6, "outro": 1.4, "gap": 0.4, "music": "tension",
+  "gancho": "Em maio de 2017, um vírus trancou mais de 200 mil computadores em 150 países.",
+  "sources": [
+    "Europol, declaração do diretor Rob Wainwright (14/05/2017): mais de 200 mil vítimas em pelo menos 150 países no ataque WannaCry de 12/05/2017",
+    "National Audit Office (Reino Unido), 'Investigation: WannaCry cyber attack and the NHS' (out/2017): cerca de 19 mil consultas e atendimentos cancelados",
+    "Microsoft, boletim de segurança MS17-010 (14/03/2017): correção da falha do Windows usada pelo WannaCry, 2 meses antes do ataque",
+    "NCSC (Reino Unido) e BBC (maio/2017): o pesquisador Marcus Hutchins registrou o domínio que funcionava como interruptor e freou a propagação"
+  ],
+  "postar": { "titulo": "O vírus que parou hospitais 🔒", "descricao": "A correção já existia 2 meses antes. Mantenha seu sistema atualizado.", "hashtags": ["casoreal", "ciberseguranca", "tecnologia", "wannacry"] },
+  "capa_t": 1.2,
+  "lines": [
+    { "text": "Em maio de dois mil e dezessete, um vírus trancou mais de duzentos mil computadores em cento e cinquenta países.", "caps": "Em *maio | de *2017, | um *vírus | *trancou | *mais de | *200 mil | *computadores | em *150 | *países." },
+    { "text": "Hospitais do Reino Unido tiveram que cancelar milhares de consultas.", "caps": "*Hospitais | do Reino *Unido | tiveram que *cancelar | *milhares de | *consultas." },
+    { "text": "Ele usava uma falha do Windows que já tinha correção havia dois meses.", "caps": "Ele *usava | uma *falha | do *Windows | que já *tinha | *correção | havia *2 meses." },
+    { "text": "Um pesquisador parou o ataque registrando um endereço de site.", "caps": "Um *pesquisador | *parou | o *ataque | *registrando | um *endereço | de *site." },
+    { "text": "Atualize seu sistema e segue pra mais casos reais.", "caps": "*Atualize | seu *sistema | e *segue pra | mais casos *reais.", "variantes": {
+      "tiktok": { "text": "Atualize seu sistema e segue pra mais casos reais.", "caps": "*Atualize | seu *sistema | e *segue pra | mais casos *reais." },
+      "reels": { "text": "Atualize seu sistema e segue pra mais casos reais.", "caps": "*Atualize | seu *sistema | e *segue pra | mais casos *reais." },
+      "shorts": { "text": "Atualize seu sistema e se inscreve pra mais casos reais.", "caps": "*Atualize | seu *sistema | e se *inscreve | pra *mais | casos *reais." } } }
+  ]
+}

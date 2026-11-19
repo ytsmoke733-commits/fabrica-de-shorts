@@ -1,0 +1,21 @@
+{
+  "title": "Como o micro-ondas esquenta a comida?",
+  "lang": "pt", "voice": "pm_alex", "speed": 1.05, "lead": 0.3, "outro": 1.0, "gap": 0.2, "music": "tension",
+  "gancho": "Você usa o micro-ondas todo dia, mas sabe como ele esquenta a comida?",
+  "sources": [
+    "FDA, 'Microwave Oven Radiation': o magnetron gera micro-ondas que fazem as moléculas de água da comida vibrarem, e isso produz calor",
+    "Britannica, 'microwave oven': frequência doméstica de 2,45 GHz (2,45 bilhões de ciclos por segundo)"
+  ],
+  "postar": { "titulo": "Como o micro-ondas esquenta a comida? 🍝", "descricao": "Você usa todo dia, mas sabe como funciona?", "hashtags": ["curiosidades", "ciencia", "comofunciona", "vocesabia"] },
+  "capa_t": 1.2,
+  "lines": [
+    { "text": "Você usa o micro-ondas todo dia, mas sabe como ele esquenta a comida?", "caps": "*Você usa | o *micro-ondas | todo *dia | mas *sabe | como ele *esquenta | a *comida?" },
+    { "text": "Lá dentro, um magnetron joga ondas invisíveis na caixa.", "caps": "Lá *dentro | um *magnetron | *joga | ondas *invisíveis | na *caixa" },
+    { "text": "Elas fazem a água da comida girar bilhões de vezes por segundo.", "caps": "Elas *fazem | a *água | da *comida | *girar | *bilhões de vezes | por *segundo" },
+    { "text": "E esse atrito vira calor.", "caps": "E esse *atrito | vira *calor" },
+    { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades", "variantes": {
+      "tiktok": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "reels": { "text": "Segue pra mais curiosidades.", "caps": "Segue *pra | mais *curiosidades" },
+      "shorts": { "text": "Se inscreve pra mais curiosidades.", "caps": "Se *inscreve pra | mais *curiosidades" } } }
+  ]
+}

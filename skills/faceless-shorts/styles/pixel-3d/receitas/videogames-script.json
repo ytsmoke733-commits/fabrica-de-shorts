@@ -1,0 +1,82 @@
+{
+  "title": "Por que os videogames antigos eram quadradinhos?",
+  "lang": "pt",
+  "voice": "pm_alex",
+  "speed": 1.05,
+  "lead": 0.3,
+  "outro": 1,
+  "gap": 0.2,
+  "music": "bed",
+  "gancho": "Por que os videogames antigos eram todos quadradinhos?",
+  "sources": [
+    "Atari VCS/2600 (lançado em setembro de 1977): 128 bytes de RAM; o chip de vídeo (TIA) não tinha memória de quadro, então o programa montava a imagem linha por linha enquanto o feixe da TV varria a tela. Montfort e Bogost, 'Racing the Beam: The Atari Video Computer System', MIT Press, 2009",
+    "SMS: até 160 caracteres de 7 bits por mensagem = 140 bytes (norma GSM 03.38 / 3GPP TS 23.038)",
+    "Celular com 8 GB de RAM: 8 x 1024^3 / 128 = 67.108.864 vezes os 128 bytes (mais de 60 milhões)"
+  ],
+  "postar": {
+    "titulo": "Por que os jogos antigos eram quadradinhos? 🎮",
+    "descricao": "Um console inteiro com menos memória que um SMS.",
+    "hashtags": [
+      "curiosidades",
+      "videogame",
+      "retrogames",
+      "pixelart",
+      "vocesabia"
+    ]
+  },
+  "capa_t": 1.2,
+  "lines": [
+    {
+      "text": "Por que os videogames antigos eram todos quadradinhos?",
+      "caps": "*Por que | os *videogames | *antigos | eram todos *quadradinhos?"
+    },
+    {
+      "text": "Nos anos setenta, um console famoso tinha só cento e vinte e oito bytes de memória.",
+      "caps": "Nos anos *70 | um console *famoso | tinha *só | *128 bytes | de *memória"
+    },
+    {
+      "text": "Isso é menos que uma única mensagem de celular.",
+      "caps": "Isso é *menos | que uma *única | *mensagem de celular"
+    },
+    {
+      "text": "Então cada personagem era desenhado com poucos quadradinhos de cor, os pixels.",
+      "caps": "Então cada *personagem | era *desenhado | com *poucos | quadradinhos de *cor | os *pixels"
+    },
+    {
+      "text": "E nem dava pra guardar a imagem da tela inteira.",
+      "caps": "E nem *dava | pra *guardar | a *imagem | da tela *inteira"
+    },
+    {
+      "text": "O jogo desenhava a tela linha por linha, junto com a TV.",
+      "caps": "O jogo *desenhava | a *tela | linha por *linha | *junto | com a *TV"
+    },
+    {
+      "text": "Hoje, um celular tem mais de sessenta milhões de vezes essa memória.",
+      "caps": "*Hoje | um *celular | tem *mais de | *60 milhões | de *vezes | essa *memória"
+    },
+    {
+      "text": "Mas o quadradinho virou estilo, por isso este vídeo é assim.",
+      "caps": "Mas o *quadradinho | virou *estilo | por *isso | este *vídeo | é *assim"
+    },
+    {
+      "text": "Segue pra mais curiosidades.",
+      "caps": "Segue *pra | mais *curiosidades",
+      "variantes": {
+        "tiktok": {
+          "text": "Segue pra mais curiosidades.",
+          "caps": "Segue *pra | mais *curiosidades"
+        },
+        "reels": {
+          "text": "Segue pra mais curiosidades.",
+          "caps": "Segue *pra | mais *curiosidades"
+        },
+        "shorts": {
+          "text": "Se inscreve pra mais curiosidades.",
+          "caps": "Se *inscreve pra | mais *curiosidades"
+        }
+      }
+    }
+  ],
+  "marca_nome": "Curiosidades",
+  "marca_arroba": "@seucanal"
+}
