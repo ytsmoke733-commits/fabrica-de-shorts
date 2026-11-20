@@ -28,6 +28,12 @@ if [ -x "$PY" ]; then
   if "$PY" -c "$CHECK" 2>/dev/null; then say python-env "ok ($VENV)"; else say python-env "BROKEN: run  $PY -m pip install numpy scipy kokoro-onnx faster-whisper"; ok=0; fi
   if "$PY" "$SKILL/scripts/voice.py" --download >/dev/null 2>&1; then say voice "ok (Kokoro, $FH/kokoro)"; else say voice "model download FAILED (check the internet connection, re-run)"; ok=0; fi
   if "$PY" -c "from faster_whisper import WhisperModel; WhisperModel('small.en', device='cpu', compute_type='int8')" >/dev/null 2>&1; then say whisper "ok (small.en)"; else say whisper "model download FAILED (re-run setup.sh)"; ok=0; fi
+  MAPCHECK="import rasterio, pystac_client, PIL"   # optional: only the mapa-satelite style needs it, to download NEW maps
+  if ! "$PY" -c "$MAPCHECK" 2>/dev/null; then
+    if command -v uv >/dev/null; then uv pip install --python "$PY" -q rasterio pystac-client pillow >/dev/null 2>&1
+    else "$PY" -m pip install -q rasterio pystac-client pillow >/dev/null 2>&1; fi
+  fi
+  if "$PY" -c "$MAPCHECK" 2>/dev/null; then say map-tools "ok (rasterio, for mapa-satelite)"; else say map-tools "optional, not installed: only needed to download new satellite maps (pip install rasterio pystac-client pillow)"; fi
 else say python-env "MISSING: install Python 3.10+ (python.org) or uv (docs.astral.sh/uv)"; ok=0; fi
 chmod +x "$SKILL"/scripts/*.sh "$SKILL"/scripts/py 2>/dev/null
 [ $ok = 1 ] && echo "All set" || { echo "Fix the MISSING items above, then run setup.sh again."; exit 1; }

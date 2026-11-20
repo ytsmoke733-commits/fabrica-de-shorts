@@ -11,6 +11,7 @@ word-synced captions, animation, sound effects and music, rendered to MP4. No AI
 5. **Paper Atlas**: history in cut paper and maps. Example: *How one bakery burned down London*.
 6. **Tall Tale 3D**: funny true stories, flat 2D cartoon people in a sunny 3D world. Example: *The girl who was mailed to grandma*.
 7. **Pixel 3D**: pixel-art 3D "how does it work?" explainers (chunky pixels, x-ray views, pixel font). Example (pt-BR): *Como o micro-ondas esquenta a comida?*
+8. **Mapa de Satélite**: real satellite imagery (NASA, Copernicus Sentinel-2) zooming from country to state to city, with routes drawn over the photo and a year in the corner. Example (pt-BR): *45 anos esperando 10 km de metrô*. New maps are downloaded by `kit/mapa/baixar.py` (needs internet; credit the sources).
 
 **How it works**
 script.json → Kokoro voice (local, free) → Whisper word timings (local, free) → shots drawn in code, each cut and caption
@@ -32,4 +33,4 @@ and `bash scripts/selftest.sh` (prints "SELFTEST PASSED"). Start a new session a
 
 **Licenses:** the code, stories, drawings and sound are original and free to use in your videos. Inter font: SIL Open Font
 License 1.1. Installed on first use: Kokoro-82M (Apache-2.0) via kokoro-onnx (MIT), faster-whisper + Whisper small.en (MIT),
-numpy, scipy.
+numpy, scipy. For new satellite maps only: rasterio, pystac-client, pillow; imagery from NASA GIBS and Copernicus Sentinel-2 (commercial use allowed with credit), state outlines from IBGE.

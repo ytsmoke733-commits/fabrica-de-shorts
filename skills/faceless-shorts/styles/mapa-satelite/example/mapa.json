@@ -1,0 +1,12 @@
+{
+  "camadas": [
+    { "id": "brasil", "fonte": "nasa-relevo", "bbox": [-75, -41, -30, 12], "largura": 3200, "ajuste": { "petroleo": 0.8 } },
+    { "id": "sudeste", "fonte": "nasa-modis", "satelite": "aqua", "datas": ["2024-08-30", "2024-08-18", "2024-07-22"], "bbox": [-53.5, -23.3, -41.3, -13.5], "largura": 4096, "casar": "brasil", "forca": 0.5 },
+    { "id": "bh-regiao", "fonte": "sentinel2", "periodo": "2024-07-01/2024-08-31", "bbox": [-44.6, -20.45, -43.45, -19.4], "largura": 2048, "casar": "sudeste", "forca": 0.5 },
+    { "id": "bh-meio", "fonte": "sentinel2", "periodo": "2024-07-01/2024-08-31", "bbox": [-44.28, -20.30, -43.70, -19.60], "largura": 2560, "casar": "bh-regiao", "forca": 0.6 },
+    { "id": "bh", "fonte": "sentinel2", "periodo": "2024-07-01/2024-08-31", "bbox": [-44.10, -20.10, -43.86, -19.80], "largura": 3072, "casar": "bh-meio", "forca": 0.8 }
+  ],
+  "contornos": [
+    { "id": "MG", "fonte": "ibge-uf", "uf": "MG" }
+  ]
+}

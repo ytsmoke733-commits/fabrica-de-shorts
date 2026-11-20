@@ -1,6 +1,6 @@
 ---
 name: faceless-shorts
-description: Make narrated faceless YouTube Shorts / TikToks / Reels fully in code on the user's computer, with a free local AI voice and word-synced captions, $0. Seven styles - Deep Dive 3D (Zack D. Films-like 3D "what happens if" body/science explainers), Night File 3D (unsolved mysteries, true crime), Inside Out (flat 2D x-ray explainers), Stick Story (stick-figure "what would you do if" survival steps), Paper Atlas (history in cut paper with maps), Tall Tale 3D (funny true stories with flat 2D cartoon people in a sunny 3D world, one-word captions), Pixel 3D (pixel-art 3D "how does it work" explainers). Use whenever someone wants a faceless short, a what-if or what-happens-if explainer, a Zack D. Films style video, a mystery or true-crime short, a stick-figure story, a history short, a funny true story or storytime cartoon short, or a video in one of these styles, even from just a topic. Can also upload the finished short to the user's YouTube channel through Zapier when they ask.
+description: Make narrated faceless YouTube Shorts / TikToks / Reels fully in code on the user's computer, with a free local AI voice and word-synced captions, $0. Eight styles - Deep Dive 3D (Zack D. Films-like "what happens if" body/science), Night File 3D (mysteries, true crime), Inside Out (flat 2D x-ray explainers), Stick Story (stick-figure survival steps), Paper Atlas (history in cut paper with maps), Tall Tale 3D (funny true stories, cartoon people, one-word captions), Pixel 3D (pixel-art "how does it work"), Mapa de Satélite (real satellite map zooming country → state → city with routes drawn on top: timelines of a place, delayed public works). Use whenever someone wants a faceless short, a what-if explainer, a Zack D. Films style video, a mystery or true-crime short, a stick-figure story, a history short, a funny true story, a satellite-map zoom short, or a video in one of these styles, even from just a topic. Can also upload the finished short to YouTube through Zapier when asked.
 ---
 
 # Faceless Shorts
@@ -19,10 +19,11 @@ local Whisper word timing, numpy sound. No AI images or video, no API keys, no c
 | **Paper Atlas** `paper-atlas` | history in cut paper: parchment maps, crimson routes, gold date ribbons, period figures | 30-45 s · 9:16 |
 | **Tall Tale 3D** `tall-tale` | funny true stories: flat 2D cartoon people (big round heads, ink outlines) acting in a sunny 3D small-town world, camera always moving, one-word captions | 40-60 s · 9:16 |
 | **Pixel 3D** `pixel-3d` | "you use it every day, but how does it work?": a simple 3D world rendered at 270x480 and blown up 4x without smoothing (toon light, dark outlines, few colors), x-ray views, pixel-font HUD and captions. Example in Portuguese; renders scenes from `src/cenas.js`, not `shots.js` | 15-45 s · 9:16 |
+| **Mapa de Satélite** `mapa-satelite` | real satellite imagery (NASA, Copernicus Sentinel-2) as the stage: continuous zoom country → state (lights up) → city, routes and rail lines drawing themselves over the photo, year in the corner, flat cartoon cards on top. Example in Portuguese; renders scenes from `src/cenas.js`; maps come from `mapa.json` → `kit/mapa/baixar.py` | 40-60 s · 9:16 |
 
 Which style: body / health / science "what happens if" → **Deep Dive 3D** (or **Inside Out** for a lighter, faster 2D
 look) · creepy, unexplained, true crime, "this happened in 1971" → **Night File 3D** · survival, life hacks, "here's what
-you do" → **Stick Story** · a historical event, "how X happened" → **Paper Atlas** · a funny or clever true story, a con, a loophole, "this guy did X" → **Tall Tale 3D** · how an everyday thing works, retro / video-game / tech curiosities, or the user asks for "pixel art 3D" → **Pixel 3D**. If it isn't obvious, ask once.
+you do" → **Stick Story** · a historical event, "how X happened" → **Paper Atlas** · a funny or clever true story, a con, a loophole, "this guy did X" → **Tall Tale 3D** · how an everyday thing works, retro / video-game / tech curiosities, or the user asks for "pixel art 3D" → **Pixel 3D** · the story of a real place over time (a delayed metro or railway, money spent on a public work, a route, "this city waited 40 years"), or the user asks for a satellite map that zooms in → **Mapa de Satélite** (never Paper Atlas for real satellite imagery; never Google/Esri/Mapbox images: see its STYLE.md section 4). If it isn't obvious, ask once.
 
 Each style = `styles/<style>/style-sheet.png` (the look in one image, drawn by the style's own code) + `STYLE.md` (the rules + the engine manual) +
 `example/` (a complete project that renders as-is). **Read the style's STYLE.md in full before planning.**
@@ -114,7 +115,7 @@ engine/kit map, components, shot anatomy, cue types, QA pitfalls) and a complete
 shared scripts (voice, words, estimate, new_video, selftest) work unchanged. Add a row to the table above and run
 `selftest.sh` until every style passes.
 
-## 3D styles (Deep Dive, Night File, Tall Tale, Pixel 3D)
+## 3D styles (Deep Dive, Night File, Tall Tale, Pixel 3D, Mapa de Satélite)
 They render real 3D with three.js in headless Chrome. With a graphics card it's fast and full quality. Without one
 (a laptop without GPU acceleration, a cloud sandbox) render with `SOFTWARE_GL=1 QS='&res=0.6&aa=0&shadow=1024'
 FPS=24` in front of `node tools/capture.mjs ...` (≈2 s per frame; tell the user the render time up front, run it in the

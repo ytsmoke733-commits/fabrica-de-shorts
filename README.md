@@ -28,7 +28,10 @@ Cada estilo tem um kit em `estilos/<estilo>/`: `STYLE.md` com as regras e a API,
 - `estilos/`: os 6 kits.
 - `marcas/`: os canais. Vêm 2 de exemplo: `conhecimento` ("Meu Canal") e `hacker` (educativo). O nome e o @ que aparecem no cartão final saem do `marca.json`.
 - `skills/fabrica-de-shorts/`: a skill que ensina o Claude a usar a fábrica.
-- `skills/faceless-shorts/`: a skill base, com voz, legendas, instalação e mais 7 estilos genéricos em inglês.
+- `skills/faceless-shorts/`: a skill base, com voz, legendas e instalação. Traz mais 8 estilos próprios: 7 em inglês e o **Mapa de Satélite**, em português.
+  - O Mapa de Satélite usa imagens reais de satélite, com zoom do país até a cidade e rotas desenhadas por cima.
+  - O exemplo é "45 anos esperando 10 km de metrô".
+  - Peça, por exemplo: "faz um vídeo de mapa de satélite sobre a obra X".
 
 ## Instalação (Windows, macOS ou Linux)
 
@@ -81,3 +84,10 @@ O caminho `~/fabrica-de-shorts` é só uma sugestão. A fábrica funciona em qua
 - Kokoro-82M: Apache-2.0.
 - kokoro-onnx, faster-whisper e Whisper: MIT.
 - HyperFrames: veja a licença do pacote no npm.
+- Imagens do estilo Mapa de Satélite:
+  - NASA GIBS (Blue Marble e MODIS): domínio público;
+  - Copernicus Sentinel-2: uso livre, inclusive comercial, com crédito;
+  - malhas do IBGE;
+  - traçados do © OpenStreetMap (ODbL).
+
+  O crédito tem de aparecer no vídeo e na descrição do post, e o estilo já faz as duas coisas. Para baixar mapas novos, o `setup.sh` tenta instalar `rasterio`, `pystac-client` e `pillow`; o exemplo funciona sem eles.
