@@ -13,6 +13,7 @@ lotes/
 node_modules/
 .superpowers/
 !estilos/*/amostra*.jpg
+!estilos/mapa-satelite/modelo/mapa/*.jpg
 estilos/voxel/vitrine/kit/
 estilos/voxel/vitrine/vendor/
 estilos/voxel/vitrine/fonts/

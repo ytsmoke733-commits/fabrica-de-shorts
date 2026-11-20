@@ -1,9 +1,8 @@
 import fs from 'node:fs';
 import path from 'node:path';
-import { LIMITE_S } from './paths.mjs';
 import { carregarMarca, plataformasDaMarca } from './marca.mjs';
 import { prontosParaRender, mudarEtapa } from './fila.mjs';
-import { checarScript } from './checagem.mjs';
+import { checarScript, limiteDe } from './checagem.mjs';
 import { checarIsolamento } from './isolamento.mjs';
 import { scriptPath } from './estilos.mjs';
 import { renderizarVariante } from './render.mjs';
@@ -32,7 +31,8 @@ export async function entregarVideo(root, item, { run, log = () => {}, so = null
     const d = comandoDuracao(mp4);
     const s = parseFloat((await run(d.cmd, d.args, { cwd: dir })).out);
     if (!(s > 0)) throw new Error(`não consegui medir a duração de ${p}.mp4`);
-    if (s > LIMITE_S[p] + 0.05) throw new Error(`${p}.mp4 tem ${s.toFixed(1)} s (limite ${LIMITE_S[p]} s)`);
+    const lim = limiteDe(script, p);
+    if (s > lim + 0.05) throw new Error(`${p}.mp4 tem ${s.toFixed(1)} s (limite ${lim} s)`);
     const folha = comandoFolha(mp4, path.join(dir, `folha-${p}.jpg`));
     const rf = await run(folha.cmd, folha.args, { cwd: dir });
     if (rf.code !== 0) throw new Error('folha falhou: ' + String(rf.out).trim().split(/\r?\n/).slice(-5).join(' | '));

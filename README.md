@@ -16,6 +16,7 @@ Não usa vídeo nem imagem de IA, chave de API ou créditos.
 | `voxel` | mundo de blocos chanfrados (low poly), "e se…?" |
 | `deep-dive` | personagem 3D com raio-x e órgãos, corpo e ciência |
 | `pixel` | pixel art 3D, "como funciona um objeto do dia a dia" |
+| `mapa-satelite` | imagem de satélite real com zoom do país até a cidade, rotas desenhadas por cima e o ano no canto; história de um lugar, como uma obra atrasada (40–60 s) |
 | `motion` | cartões de interface e tipografia, números e listas |
 | `motion-b` | motion com tema escuro, para tecnologia e segurança |
 | `caso-real` | casos reais em cenário escuro com uma luz |
@@ -25,13 +26,12 @@ Cada estilo tem um kit em `estilos/<estilo>/`: `STYLE.md` com as regras e a API,
 ## O que tem aqui
 
 - `fabrica/`: a linha de comando (`node fabrica/bin/fabrica.mjs`) com `novo`, `checar`, `fila`, `etapa`, `render-variante`, `kits` e `narracoes`.
-- `estilos/`: os 6 kits.
+- `estilos/`: os 7 kits.
 - `marcas/`: os canais. Vêm 2 de exemplo: `conhecimento` ("Meu Canal") e `hacker` (educativo). O nome e o @ que aparecem no cartão final saem do `marca.json`.
 - `skills/fabrica-de-shorts/`: a skill que ensina o Claude a usar a fábrica.
-- `skills/faceless-shorts/`: a skill base, com voz, legendas e instalação. Traz mais 8 estilos próprios: 7 em inglês e o **Mapa de Satélite**, em português.
-  - O Mapa de Satélite usa imagens reais de satélite, com zoom do país até a cidade e rotas desenhadas por cima.
-  - O exemplo é "45 anos esperando 10 km de metrô".
-  - Peça, por exemplo: "faz um vídeo de mapa de satélite sobre a obra X".
+- `skills/faceless-shorts/`: a skill base, com voz, legendas e instalação.
+  - Traz mais 8 estilos próprios: 7 em inglês e uma cópia portátil do Mapa de Satélite.
+  - Para os seus canais, use os modelos da fábrica.
 
 ## Instalação (Windows, macOS ou Linux)
 
@@ -52,7 +52,7 @@ Para conferir se ficou tudo certo:
 
 ```bash
 cd ~/fabrica-de-shorts
-node --test fabrica/tests/*.test.mjs     # 144 testes
+node --test fabrica/tests/*.test.mjs     # 171 testes
 node fabrica/bin/fabrica.mjs kits        # renderiza 1 vídeo de teste por estilo (leva alguns minutos)
 ```
 
@@ -67,6 +67,12 @@ O caminho `~/fabrica-de-shorts` é só uma sugestão. A fábrica funciona em qua
    ou
 
    > faz um pixel 3D explicando como funciona o controle remoto da TV
+
+   ou
+
+   > faz um vídeo de mapa de satélite sobre uma obra que atrasou décadas na sua cidade
+
+   (para um lugar novo, o Claude baixa as imagens de satélite na hora: precisa de internet)
 3. O Claude confere os fatos, escreve o roteiro e monta as cenas. Ele revisa os quadros antes de renderizar e entrega os vídeos em `marcas/<marca>/videos/<data>-<tema>/entrega/`.
 
 **Narração própria:** grave um mp3 por vídeo e peça "aplica minha narração". A skill explica como os arquivos devem se chamar.

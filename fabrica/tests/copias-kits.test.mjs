@@ -18,7 +18,7 @@ function corpoDaFuncao(texto, nome, arquivo) {
   assert.fail(`${arquivo}: não achei a chave que fecha ${nome}`);
 }
 
-const AVISO = 'As cópias entre os kits motion, voxel, deep-dive, caso-real e pixel devem ficar iguais: mexeu numa, mexa na outra.';
+const AVISO = 'As cópias entre os kits motion, voxel, deep-dive, caso-real, pixel e mapa-satelite devem ficar iguais: mexeu numa, mexa na outra.';
 
 test('numeros.mjs igual nos kits motion e voxel (fora o comentário "Cópia de…")', () => {
   const motion = lerKit('motion/kit/numeros.mjs');
@@ -110,4 +110,16 @@ for (const arq of ['kit/motor/lib.js', 'kit/mundo/camera3d.js', 'modelo/tools/ca
   test(`${arq} igual nos kits voxel e pixel`, () => {
     assert.equal(lerKit(`pixel/${arq}`), lerKit(`voxel/${arq}`), `estilos/pixel/${arq} divergiu de estilos/voxel/${arq}. ${AVISO}`);
   });
+}
+
+// Cópias do mapa-satelite: o kit reaproveita peças do voxel e do pixel sem mudar nada (o código novo é só kit/mapa/).
+const MAPA_DO_VOXEL = ['kit/cameras.mjs', 'kit/hud.mjs', 'kit/legendas.mjs', 'kit/tema.mjs', 'kit/tempo.mjs', 'kit/motor/engine.js',
+  ...['blocos.js', 'efeitos.js', 'elenco.js', 'espaco.js', 'orla.js', 'pessoa.js', 'poses.mjs', 'props.js', 'rostos.mjs', 'rua.js', 'sala.js', 'trafego.mjs'].map((a) => `kit/mundo/${a}`)];
+const MAPA_DO_PIXEL = ['kit/numeros.mjs', 'kit/motor/lib.js', 'kit/mundo/camera3d.js', 'modelo/tools/capture.mjs', 'modelo/tools/mix.py'];
+for (const [origem, lista] of [['voxel', MAPA_DO_VOXEL], ['pixel', MAPA_DO_PIXEL]]) {
+  for (const arq of lista) {
+    test(`${arq} igual nos kits ${origem} e mapa-satelite`, () => {
+      assert.equal(lerKit(`mapa-satelite/${arq}`), lerKit(`${origem}/${arq}`), `estilos/mapa-satelite/${arq} divergiu de estilos/${origem}/${arq}. ${AVISO}`);
+    });
+  }
 }

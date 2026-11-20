@@ -9,6 +9,7 @@ export const ESTILOS = {
   'motion-b': { motor: 'hyperframes', modelo: 'estilos/motion/modelo-b', kit: 'estilos/motion/kit', tema: 'tema-b' },
   'caso-real': { motor: 'fs3d', modelo: 'estilos/caso-real/modelo', kit: 'estilos/caso-real/kit', tema: 'tema' },
   pixel: { motor: 'fs3d', modelo: 'estilos/pixel/modelo', kit: 'estilos/pixel/kit', tema: 'tema' },
+  'mapa-satelite': { motor: 'fs3d', modelo: 'estilos/mapa-satelite/modelo', kit: 'estilos/mapa-satelite/kit', tema: 'tema' },
 };
 // estilos já transformados em kit (hoje, todos)
 export const estilosComKit = () => Object.keys(ESTILOS).filter((id) => ESTILOS[id].kit);

@@ -1,0 +1,93 @@
+{
+  "title": "45 anos esperando 10 km de metrô",
+  "lang": "pt",
+  "voice": "pm_alex",
+  "speed": 1.05,
+  "lead": 0.3,
+  "outro": 1,
+  "gap": 0.2,
+  "music": "tension",
+  "gancho": "Belo Horizonte já espera há 45 anos por 10 km de metrô.",
+  "sources": [
+    "Plano de 1981 (base GEIPOT/1977): ramal Barreiro–Calafate de 10,5 km, com meta em 1986 (Wikipédia, Metrô de Belo Horizonte, seção história)",
+    "Linha 1: operação comercial a partir de 1º de agosto de 1986, trecho Eldorado–Lagoinha (Wikipédia, Metrô de Belo Horizonte)",
+    "Linha 2: obras iniciadas em 1998 com financiamento do Banco Mundial; paralisadas em 2004 com cerca de 40% de execução, por cortes de orçamento (Wikipédia, Linha 2 do Metrô de Belo Horizonte)",
+    "2011: governo federal anunciou R$ 3,16 bilhões (PAC Grandes Cidades) para o sistema; o dinheiro não chegou (Wikipédia, Linha 2)",
+    "Leilão na B3 em 22/12/2022: lance único do Grupo Comporte, cerca de R$ 25,7 milhões; concessão de 30 anos; investimento total de R$ 3,7 bilhões, 86% (R$ 3,2 bilhões) de recursos públicos (Wikipédia, Metrô de BH e Linha 2)",
+    "Obras retomadas em setembro de 2024; estações Nova Suíça e Amazonas abertas em 3/7/2026; conclusão até o Barreiro prevista para 2028 (Agência Minas; Diário do Comércio; Itatiaia)"
+  ],
+  "postar": {
+    "titulo": "45 anos esperando 10 km de metrô 🚇",
+    "descricao": "A Linha 2 do metrô de BH, do plano de 1981 até hoje.\n\nImagens: NASA GIBS/Blue Marble, NASA GIBS/MODIS; contém dados modificados Copernicus Sentinel 2024; malhas: IBGE; traçados das linhas: © colaboradores do OpenStreetMap.",
+    "hashtags": [
+      "belohorizonte",
+      "metro",
+      "minasgerais",
+      "curiosidades",
+      "historia"
+    ]
+  },
+  "capa_t": 1.2,
+  "lines": [
+    {
+      "text": "Belo Horizonte já espera há quarenta e cinco anos por dez quilômetros de metrô.",
+      "caps": "Belo *Horizonte | já *espera | há *45 anos | por *10 quilômetros | de *metrô"
+    },
+    {
+      "text": "Em mil novecentos e oitenta e um, o plano já tinha uma linha até o Barreiro, pronta em oitenta e seis.",
+      "caps": "Em *1981 | o *plano | já *tinha | uma *linha | até o *Barreiro | *pronta | em *86"
+    },
+    {
+      "text": "Em oitenta e seis, o metrô abriu. Só a Linha um. O Barreiro ficou pra depois.",
+      "caps": "Em *86 | o metrô *abriu | *Só a | Linha *1 | O *Barreiro | ficou pra *depois"
+    },
+    {
+      "text": "Em noventa e oito, com empréstimo do Banco Mundial, as obras começaram.",
+      "caps": "Em *98 | com *empréstimo | do Banco *Mundial | as obras *começaram"
+    },
+    {
+      "text": "Em dois mil e quatro, com quarenta por cento feitos, pararam. Faltou verba.",
+      "caps": "Em *2004 | com *40% | *feitos | *pararam | Faltou *verba"
+    },
+    {
+      "text": "Em dois mil e onze, anunciaram mais de três bilhões pro metrô. Nunca chegaram.",
+      "caps": "Em *2011 | *anunciaram | mais *de | *3 bilhões | pro *metrô | Nunca *chegaram"
+    },
+    {
+      "text": "Em dois mil e vinte e dois, o metrô foi a leilão. Um lance só: uns vinte e seis milhões de reais.",
+      "caps": "Em *2022 | o *metrô | foi a *leilão | Um *lance | *só | uns *26 milhões | de *reais"
+    },
+    {
+      "text": "E de cada cem reais pra terminar a Linha dois, oitenta e seis são dinheiro público.",
+      "caps": "E de *cada | *100 reais | pra *terminar | a Linha *2 | *86 | são *dinheiro | *público"
+    },
+    {
+      "text": "As obras voltaram em dois mil e vinte e quatro. Em julho, abriram as duas primeiras estações.",
+      "caps": "As *obras | *voltaram | em *2024 | Em *julho | *abriram | as *2 | *primeiras | *estações"
+    },
+    {
+      "text": "E o Barreiro? Previsão: dois mil e vinte e oito. Se não atrasar.",
+      "caps": "E o *Barreiro? | *Previsão | *2028 | Se *não | *atrasar"
+    },
+    {
+      "text": "Segue pra mais curiosidades.",
+      "caps": "Segue *pra | mais *curiosidades",
+      "variantes": {
+        "tiktok": {
+          "text": "Segue pra mais curiosidades.",
+          "caps": "Segue *pra | mais *curiosidades"
+        },
+        "reels": {
+          "text": "Segue pra mais curiosidades.",
+          "caps": "Segue *pra | mais *curiosidades"
+        },
+        "shorts": {
+          "text": "Se inscreve pra mais curiosidades.",
+          "caps": "Se *inscreve pra | mais *curiosidades"
+        }
+      }
+    }
+  ],
+  "marca_nome": "Conhecimento geral",
+  "limite_s": 60
+}

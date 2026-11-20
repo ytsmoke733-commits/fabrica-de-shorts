@@ -14,7 +14,9 @@ test('deep-dive usa o kit deep-dive', () => assert.deepEqual(ESTILOS['deep-dive'
 
 test('caso-real usa o kit caso-real', () => assert.deepEqual(ESTILOS['caso-real'], { motor: 'fs3d', modelo: 'estilos/caso-real/modelo', kit: 'estilos/caso-real/kit', tema: 'tema' }));
 
-test('pixel usa o kit pixel', () => assert.deepEqual(ESTILOS.pixel, { motor: 'fs3d', modelo: 'estilos/pixel/modelo', kit: 'estilos/pixel/kit', tema: 'tema' }));
+test('mapa-satelite usa o kit mapa-satelite (motor fs3d)', () => assert.deepEqual(ESTILOS['mapa-satelite'], { motor: 'fs3d', modelo: 'estilos/mapa-satelite/modelo', kit: 'estilos/mapa-satelite/kit', tema: 'tema' }));
+
+test('pixel usa o kit pixel',() => assert.deepEqual(ESTILOS.pixel, { motor: 'fs3d', modelo: 'estilos/pixel/modelo', kit: 'estilos/pixel/kit', tema: 'tema' }));
 
 test('estilosComKit lista os estilos com kit (todos, deep-dive incluído)', () => {
   const ids = estilosComKit();

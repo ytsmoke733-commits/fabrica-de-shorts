@@ -60,6 +60,9 @@ export function checarCaps(caps) {
   return erros;
 }
 
+// "limite_s" no roteiro estende o limite da plataforma (vídeo mais longo), até 60 s
+export const limiteDe = (script, p) => Math.min(60, Math.max(LIMITE_S[p], Number(script.limite_s) || 0));
+
 export function estimarSegundos(script, plataforma) {
   const n = script.lines.length;
   const linhas = script.lines.map((l, i) => (i === n - 1 && l.variantes && l.variantes[plataforma] ? l.variantes[plataforma] : l));
@@ -92,8 +95,8 @@ export function checarScript(script, { marca, estilo }) {
     if (p === 'shorts' ? !pedeInscricao : (pedeInscricao || !/\b(segue|siga|seguir|sigam)\b/i.test(v.text))) {
       erros.push(`variante ${p}: a chamada final precisa pedir para ${p === 'shorts' ? 'se inscrever' : 'seguir'}`);
     }
-    const s = estimarSegundos(script, p);
-    if (s > LIMITE_S[p]) erros.push(`${p}: duração estimada ${s.toFixed(1)} s passa do limite de ${LIMITE_S[p]} s`);
+    const s = estimarSegundos(script, p), lim = limiteDe(script, p);
+    if (s > lim) erros.push(`${p}: duração estimada ${s.toFixed(1)} s passa do limite de ${lim} s`);
   }
 
   const hashtags = Array.isArray(script.postar?.hashtags) ? script.postar.hashtags.join(' ') : '';

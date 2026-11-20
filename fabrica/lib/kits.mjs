@@ -1,11 +1,10 @@
 import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
-import { LIMITE_S } from './paths.mjs';
 import { ESTILOS, estilosComKit, scriptPath } from './estilos.mjs';
 import { montarVideo } from './montar.mjs';
 import { carregarMarca, plataformasDaMarca } from './marca.mjs';
-import { checarScript } from './checagem.mjs';
+import { checarScript, limiteDe } from './checagem.mjs';
 import { checarIsolamento } from './isolamento.mjs';
 import { renderizarVariante } from './render.mjs';
 import { comandoDuracao } from './entrega.mjs';
@@ -53,7 +52,8 @@ export async function testarKits(root, { run, log = console.log, dirTemp = path.
       const d = comandoDuracao(mp4);
       const s = parseFloat((await run(d.cmd, d.args, { cwd: dir })).out);
       if (!(s > 0)) throw new Error(`não consegui medir a duração de ${p}.mp4`);
-      if (s > LIMITE_S[p] + 0.05) throw new Error(`${p}.mp4 tem ${s.toFixed(1)} s (limite ${LIMITE_S[p]} s)`);
+      const lim = limiteDe(script, p);
+    if (s > lim + 0.05) throw new Error(`${p}.mp4 tem ${s.toFixed(1)} s (limite ${lim} s)`);
       resultado.push({ estilo: estiloId, ok: true, plataforma: p, segundos: s });
       log(`${estiloId}: OK (${p} ${s.toFixed(1)} s)`);
     } catch (e) {

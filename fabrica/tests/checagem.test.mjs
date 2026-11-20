@@ -174,3 +174,17 @@ test('checarScript: caps diferentes do texto só são recusadas em estilo com ki
     assert.ok(checarScript(r, { marca, estilo: 'deep-dive' }).some((e) => e.includes('não batem com o texto')));
   } finally { delete ESTILOS.__semKit; }
 });
+
+test('limite_s no roteiro estende o limite até 60 s, nunca além', () => {
+  const longo = roteiro();
+  longo.lines[1].text = Array(140).fill('palavra').join(' ');
+  longo.lines[1].caps = '*palavra';
+  const s = estimarSegundos(longo, 'shorts');
+  assert.ok(s > 45 && s < 60, `estimativa ${s}`);
+  assert.ok(checarScript(longo, { marca: MARCA_A, estilo: 'motion' }).some((e) => e.includes('shorts: duração estimada')));
+  longo.limite_s = 60;
+  assert.ok(!checarScript(longo, { marca: MARCA_A, estilo: 'motion' }).some((e) => e.includes('duração estimada')));
+  longo.limite_s = 90;
+  longo.lines[1].text = Array(200).fill('palavra').join(' ');
+  assert.ok(checarScript(longo, { marca: MARCA_A, estilo: 'motion' }).some((e) => e.includes('limite de 60 s')));
+});

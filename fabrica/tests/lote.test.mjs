@@ -67,6 +67,19 @@ test('lote recusa vídeo renderizado acima do limite', async () => {
   assert.match(r[0].erro, /shorts\.mp4 tem 47\.3 s/);
 });
 
+test('lote aceita vídeo até o limite_s do roteiro (shorts de 47,3 s com limite_s 50)', async () => {
+  const { root } = raiz({ ...SCRIPT_OK, limite_s: 50 });
+  const r = await rodarLote(root, { run: fakeRun(47.3), log: () => {} });
+  assert.equal(r[0].ok, true, r[0].erro);
+});
+
+test('limite_s nunca passa de 60 s no lote', async () => {
+  const { root } = raiz({ ...SCRIPT_OK, limite_s: 90 });
+  const r = await rodarLote(root, { run: fakeRun(61), log: () => {} });
+  assert.equal(r[0].ok, false);
+  assert.match(r[0].erro, /61\.0 s \(limite 60 s\)/);
+});
+
 test('lote falha quando a capa não é gerada (ffmpeg code 1)', async () => {
   const { root } = raiz(SCRIPT_OK);
   const r = await rodarLote(root, { run: fakeRun(30, { ffmpegCode: 1 }), log: () => {} });
